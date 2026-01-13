@@ -1,6 +1,7 @@
-/* ----------------------------------------------------------
+/* ============================
    THEME TOGGLE (Dark / Light)
----------------------------------------------------------- */
+============================ */
+
 const htmlEl = document.documentElement;
 const themeBtn = document.getElementById("toggle-theme");
 
@@ -14,18 +15,40 @@ if (savedTheme === "light" || savedTheme === "dark") {
 }
 
 // Toggle theme
-if (themeBtn) {
-  themeBtn.addEventListener("click", () => {
-    const isDark = htmlEl.classList.contains("dark");
-    htmlEl.classList.toggle("dark", !isDark);
-    htmlEl.classList.toggle("light", isDark);
-    localStorage.setItem("avi-theme", isDark ? "light" : "dark");
-  });
-}
+themeBtn.addEventListener("click", () => {
+  const isDark = htmlEl.classList.contains("dark");
+  const newTheme = isDark ? "light" : "dark";
 
-/* ----------------------------------------------------------
+  htmlEl.classList.remove("light", "dark");
+  htmlEl.classList.add(newTheme);
+
+  localStorage.setItem("avi-theme", newTheme);
+});
+
+
+/* ============================
+   MOBILE MENU (Hamburger)
+============================ */
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobile-menu");
+
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Close menu when clicking a link
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+});
+
+
+/* ============================
    SMOOTH SCROLL FOR INTERNAL LINKS
----------------------------------------------------------- */
+============================ */
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     const targetId = link.getAttribute("href");
@@ -39,9 +62,11 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-/* ----------------------------------------------------------
+
+/* ============================
    CUSTOM CURSOR
----------------------------------------------------------- */
+============================ */
+
 const cursorSmall = document.getElementById("cursor-small-dot");
 const cursorBig = document.getElementById("cursor-big-dot");
 
