@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avi Patel | Mechatronics Engineering</title>
 
-  <meta name="description" content="Avi Patel, Mechatronics Engineering student at the University of Waterloo, seeking Summer 2026 co-op opportunities." />
+  <meta name="description"
+    content="Avi Patel, Mechatronics Engineering student at the University of Waterloo, seeking Summer 2026 co-op opportunities." />
 
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
@@ -24,6 +28,8 @@
     <!-- NAVBAR -->
     <header class="nav-shell">
       <nav class="nav">
+
+        <!-- Logo -->
         <a href="#hero" class="nav-left">
           <div class="nav-logo">AP</div>
           <div class="nav-text">
@@ -32,14 +38,14 @@
           </div>
         </a>
 
-        <button id="toggle-theme" class="theme-btn">
+        <!-- Theme Button -->
+        <button id="toggle-theme" class="theme-btn" type="button">
           <span class="theme-text">Theme</span>
-          <span class="theme-icons">
-            <i class="fa-solid fa-sun theme-icon theme-icon-light"></i>
-            <i class="fa-solid fa-moon theme-icon theme-icon-dark"></i>
-          </span>
+          <i class="fa-solid fa-sun theme-icon theme-icon-light"></i>
+          <i class="fa-solid fa-moon theme-icon theme-icon-dark"></i>
         </button>
 
+        <!-- Desktop Nav Links -->
         <div class="nav-links">
           <a href="#hero">Home</a>
           <a href="#about">About</a>
@@ -49,7 +55,24 @@
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="hamburger" class="hamburger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
       </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
     </header>
 
     <main>
@@ -58,32 +81,38 @@
       <section id="hero" class="section hero">
         <div class="hero-inner">
           <div class="hero-left">
-            <p class="hero-kicker">Mechatronics • Embedded Systems • Web</p>
+            <p class="hero-kicker">Mechatronics · Embedded Systems · Web</p>
 
             <h1 class="hero-title">
               Building systems where<br />
-              <span class="accent">hardware</span> and <span class="accent">software</span> meet.
+              <span class="accent">hardware</span> and
+              <span class="accent">software</span> meet.
             </h1>
 
             <p class="hero-body">
-              I'm a Mechatronics Engineering student at the University of Waterloo.<br />
-              I'm currently seeking Summer 2026 co-op opportunities to apply my skills and gain hands-on experience.
+              I'm a Mechatronics Engineering student at the University of Waterloo.
+              I'm currently seeking Summer 2026 co-op opportunities to apply my skills
+              and gain hands-on experience.
             </p>
 
             <div class="hero-buttons">
-              <a href="https://www.linkedin.com/in/avi-patel--/" class="btn btn-primary" target="_blank">
+              <a href="https://www.linkedin.com/in/avi-patel--/"
+                class="btn btn-primary" target="_blank">
                 <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
               </a>
 
-              <a href="https://github.com/avipatel2277" class="btn btn-secondary" target="_blank">
+              <a href="https://github.com/avipatel2277"
+                class="btn btn-secondary" target="_blank">
                 <i class="fa-brands fa-github"></i><span>GitHub</span>
               </a>
 
-              <a href="https://sites.google.com/view/avipatel-portfolioprojects?usp=sharing" class="btn btn-outline" target="_blank">
+              <a href="https://sites.google.com/view/avipatel-portfolioprojects?usp=sharing"
+                class="btn btn-outline" target="_blank">
                 <i class="fa-solid fa-folder-open"></i><span>Portfolio</span>
               </a>
 
-              <a href="https://drive.google.com/drive/folders/1pOozc0C2Bpn2_8uli7GM0x25E7zg260o?usp=drive_link" class="btn btn-outline" target="_blank">
+              <a href="https://drive.google.com/drive/folders/1pOozc0C2Bpn2_8uli7GM0x25E7zg260o?usp=drive_link"
+                class="btn btn-outline" target="_blank">
                 <i class="fa-solid fa-file"></i><span>Resume</span>
               </a>
             </div>
@@ -103,7 +132,9 @@
           <div class="hero-right">
             <div class="hero-bg-orb"></div>
             <div class="hero-card">
-              <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg" alt="Engineering desk" />
+              <img
+                src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg"
+                alt="Engineering desk" />
               <div class="hero-card-overlay"></div>
               <div class="hero-card-text">
                 Hands-on with firmware, circuits, and practical systems.
@@ -122,13 +153,24 @@
 
         <div class="two-col">
           <div class="col">
-            <p>I am a Mechatronics Engineering student at the University of Waterloo, working at the intersection of embedded software, electronics, and mechanical systems.</p>
-            <p>I enjoy building systems that actually run — robots, tools, traffic systems, and embedded devices.</p>
-            <p>I'm currently looking for Summer 2026 co-op positions where I can contribute to embedded, robotics, or software-focused teams.</p>
+            <p>
+              I am a Mechatronics Engineering student at the University of Waterloo,
+              working at the intersection of embedded software, electronics, and mechanical systems.
+            </p>
+            <p>
+              I enjoy building systems that actually run – robots, tools, traffic systems,
+              and embedded devices.
+            </p>
+            <p>
+              I'm currently looking for Summer 2026 co-op positions where I can contribute
+              to embedded, robotics, or software-focused teams.
+            </p>
           </div>
 
           <div class="col about-image-wrap">
-            <img src="https://images.pexels.com/photos/6804093/pexels-photo-6804093.jpeg" alt="Engineer working" />
+            <img
+              src="https://images.pexels.com/photos/6804093/pexels-photo-6804093.jpeg"
+              alt="Engineer working" />
           </div>
         </div>
       </section>
@@ -163,7 +205,7 @@
         <div class="card-grid">
           <article class="card">
             <div class="card-image">
-              <img src="assets/midnight-sun-logo.png" alt="Midnight Sun logo" />
+              <img src="assets/midnight-sun-logo.png" alt="Midnight Sun Solar Race Car logo" />
             </div>
             <div class="card-body">
               <h3>Firmware Engineer</h3>
@@ -173,7 +215,7 @@
 
           <article class="card">
             <div class="card-image">
-              <img src="assets/first-robotics-logo.png" alt="FIRST Robotics logo" />
+              <img src="assets/first-robotics-logo.png" alt="FIRST Robotics Canada logo" />
             </div>
             <div class="card-body">
               <h3>Robotics Engineer</h3>
@@ -202,7 +244,6 @@
 
         <div class="card-grid">
 
-          <!-- Chromabot -->
           <article class="card">
             <div class="card-image">
               <img src="assets/chromabot.jpg" alt="Chromabot robot" />
@@ -210,13 +251,13 @@
             <div class="card-body">
               <h3>Chromabot</h3>
               <p class="card-meta">Autonomous hue-detection robot</p>
-              <a class="project-github" href="https://github.com/avipatel2277/Chromobot" target="_blank">
+              <a class="project-github"
+                href="https://github.com/avipatel2277/Chromobot" target="_blank">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
           </article>
 
-          <!-- Traffic Light -->
           <article class="card">
             <div class="card-image">
               <img src="assets/traffic-light.jpg" alt="Traffic light system" />
@@ -224,13 +265,14 @@
             <div class="card-body">
               <h3>Traffic Light System</h3>
               <p class="card-meta">Arduino-based intersection controller</p>
-              <a class="project-github" href="https://github.com/avipatel2277/Traffic-Light-Intersection-System" target="_blank">
+              <a class="project-github"
+                href="https://github.com/avipatel2277/Traffic-Light-Intersection-System"
+                target="_blank">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
           </article>
 
-          <!-- Machined Keychain -->
           <article class="card">
             <div class="card-image">
               <img src="assets/machined-keychain.jpg" alt="Machined keychain" />
@@ -241,7 +283,6 @@
             </div>
           </article>
 
-          <!-- Grade Calculator -->
           <article class="card">
             <div class="card-image">
               <img src="assets/grade-calculator.jpg" alt="Grade calculator website" />
@@ -249,13 +290,14 @@
             <div class="card-body">
               <h3>Grade Calculator</h3>
               <p class="card-meta">HTML, CSS, JavaScript web tool</p>
-              <a class="project-github" href="https://github.com/avipatel2277/Grade-Calculator" target="_blank">
+              <a class="project-github"
+                href="https://github.com/avipatel2277/Grade-Calculator"
+                target="_blank">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
           </article>
 
-          <!-- Speaker Project -->
           <article class="card">
             <div class="card-image">
               <img src="assets/speaker-project.jpg" alt="Speaker project" />
@@ -322,9 +364,11 @@
 
         <div class="contact-grid">
 
-          <!-- LEFT SIDE -->
           <div class="contact-info">
-            <p>If you're looking for someone who can work across firmware, robotics, and software, feel free to reach out.</p>
+            <p>
+              If you're looking for someone who can work across firmware, robotics,
+              and software, feel free to reach out.
+            </p>
 
             <div class="contact-list">
               <div>
@@ -351,18 +395,19 @@
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
 
-                <a href="https://sites.google.com/view/avipatel-portfolioprojects?usp=sharing" target="_blank">
+                <a href="https://sites.google.com/view/avipatel-portfolioprojects?usp=sharing"
+                  target="_blank">
                   <i class="fa-solid fa-folder-open"></i> Portfolio
                 </a>
 
-                <a href="https://drive.google.com/drive/folders/1pOozc0C2Bpn2_8uli7GM0x25E7zg260o?usp=drive_link" target="_blank">
+                <a href="https://drive.google.com/drive/folders/1pOozc0C2Bpn2_8uli7GM0x25E7zg260o?usp=drive_link"
+                  target="_blank">
                   <i class="fa-solid fa-file"></i> Resume
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- RIGHT SIDE (FORM) -->
           <form class="contact-form" onsubmit="event.preventDefault();">
             <div class="field">
               <label for="name">Name</label>
@@ -376,7 +421,8 @@
 
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="Tell me about the role or project..." required></textarea>
+              <textarea id="message" rows="4"
+                placeholder="Tell me about the role or project..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary btn-full">Send message</button>
@@ -388,7 +434,7 @@
     </main>
 
     <footer class="footer">
-      <p>Made with ❤️ by Avi</p>
+      <p>Made with <span class="accent">care</span> by Avi</p>
     </footer>
 
   </div>
